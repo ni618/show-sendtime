@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    
+    "name": "Facebook show send-time",
+    "description": "This extension show send-time on facebook chatroom",
+    "version": "1.0",
+    
+    "icons": { "16": "ni.png", "48": "ni.png", "128": "ni.png" },
+    "content_scripts": [{
+        "matches": [ "https://*.facebook.com/*", "http://*.facebook.com/*" ],
+        "js": [ "jquery-2.1.1.min.js", "contentScripts.js" ],
+        "run_at": "document_start"
+    }]
+}
