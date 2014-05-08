@@ -5,7 +5,6 @@
     "description": "This extension show send-time on facebook chatroom",
     "version": "2.0",
     
-    "icons": { "16": "ni.png", "48": "ni.png", "128": "ni.png" },
     "content_scripts": [{
         "matches": [ "https://*.facebook.com/*", "http://*.facebook.com/*" ],
         "js": [ "contentScripts.js" ],

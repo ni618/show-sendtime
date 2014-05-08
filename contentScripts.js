@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
+
     /* highlight the seen word */
     var style = document.createElement('style');
     style.textContent = '.seen{color:#CD3333;}'
@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         + '.time-you{color:#AAA;padding:5px;float:right;}';
     document.head.appendChild(style);
     
-    console.log( $('#pagelet_dock').get(0) );
+    console.log( document.body );
     
     
-    var target = $('#pagelet_dock').get(0);
+    var target = document.body;
     var config = { childList: true, subtree: true };
     
     var observer = new MutationObserver(function(mutations) {
